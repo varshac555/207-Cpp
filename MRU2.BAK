@@ -1,0 +1,58 @@
+#include<iostream.h>
+#include<conio.h>
+class student
+{
+	int rno;
+	char sname[20];
+	public:
+		void get();
+		void put();
+
+};
+class marks:public student
+{
+	int m1,m2;
+	public:
+		void getmarks();
+		void putmarks();
+
+};
+void student::get()
+{
+	cout<<"enter your roll no->"<<endl;
+	cin>>rno;
+	cout<<"enter student name->"<<endl;
+	cin>>sname;
+}
+void student::put()
+{
+	cout<<"your roll no is->"<<rno<<endl;
+	cout<<"your name is->"<<sname<<endl;
+}
+void marks::getmarks()
+{
+	cout<<"enter marks"<<endl;
+	cin>>m1>>m2;
+}
+void marks::putmarks()
+{
+	cout<<"marks->"<<m1<<endl;
+	cout<<"marks->"<<m2<<endl;
+}
+main()
+{
+	clrscr();
+	marks a1;
+	a1.get();
+	a1.getmarks();
+	cout<<"######################################################"<<endl;
+	a1.put();
+	a1.putmarks();
+	cout<<"######################################################"<<endl;
+	getch();
+}
+
+
+
+
+

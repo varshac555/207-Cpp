@@ -1,0 +1,38 @@
+#include<iostream.h>
+#include<conio.h>
+class test
+{
+	int a,b;
+public:
+	void geta(int x,int y,int z);
+	void operator-();
+	void desp();
+};
+void test::getdata(int x,int y,int z);
+{
+	a=x;
+	b=y;
+	c=z;
+}
+void test::operator-()
+{
+	a=-a;
+	b=-b;
+	c=-c;
+}
+void test::disp()
+{
+	cout<<"value A"<<a;
+	cout<<"value B"<<b;
+	cout<<"value C"<<C;
+	}
+int main()
+{
+test t;
+t.getdata(-10,20,30);
+t.disp();
+-t;
+t.disp();
+getch();
+return 0;
+}
