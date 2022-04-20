@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+void swap(int*,int*);
+void main()
+{
+int c,d;
+clrscr();
+printf("enter two number");
+scanf("%d%d",&c,&d);
+swap(&c,&d);
+getch();
+}
+void swap(int*a,int*b)
+{
+int t=*a;
+*a=*b;
+*b=t;
+printf("after swaping values are a=%d",*a);
+printf("\nb=%d",*b);
+}
