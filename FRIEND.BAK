@@ -1,0 +1,14 @@
+#include<iostream.h>
+#include<conio.h>
+
+class value
+{
+int sales,purchase;
+public:
+	void readvalue()
+	 {
+	  cout<<"\n enter  purchase value:";
+	  cin>>purchase;
+	  cout<<"\n enter sales value:";
+	  cin>>sales;
+	 }
