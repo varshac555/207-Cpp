@@ -1,0 +1,39 @@
+#include<iostream.h>
+#include<conio.h>
+template<class T1,class T2>
+class Test
+{
+	public:
+		test(T1 a,T2 b)
+		{
+			cout<<"a="<<a<<"b="<<b;
+		}
+		void swap(T1 x,T2 y)
+		{
+			T1 t;
+			t=x;
+			x=y;
+			y=t;
+			cout<<"X="<<x<<"Y="<<y;
+		}
+};
+void main()
+{
+	clrscr();
+	char a,b;
+	int p,q;
+	cout<<"enter two integers for swap\n";
+	cin>>p>>q;
+	cout<<"Before swap\n";
+	Test<int,int>test1(p,q);
+	cout<<"\n After swap\n";
+	test1.swap(p,q);
+	cout<<"\n\n Enter two character for swap\n";
+	cin>>a>>b;
+	cout<<"Before swap\n";
+	Test<char,char>test2(a,b);
+	cout<<"\n After swap\n";
+	test2.swap(a,b);
+	getch();
+}
+
